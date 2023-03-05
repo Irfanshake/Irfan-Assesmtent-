@@ -1,0 +1,110 @@
+7. Write a program to demonstrate the method overloading by changing data types ?
+ 
+ class MethodOverloading
+  {  
+    void printt(int a)
+	{
+	System.out.println("this is int data type");
+	}  
+     void printt(double a)
+	 
+	 {
+	  System.out.println("this is double data type"); 
+	 }  
+     
+    public static void main(String[] args)
+	{  
+    MethodOverloading mo= new MethodOverloading();
+	mo.printt(10);
+	mo.printt(10.0);
+	
+    }
+  } 
+  
+  Output : this is int data type
+           this is double data type
+  
+8.Write a program to demonstrate the method overloading by changing a number of arguments ?
+  class MethodOverloading1
+ {  
+    void printt(int a,int b)
+	{
+	int c=a+b;
+	System.out.println(c);
+	}  
+     void printt(int a)
+	 
+	 {
+	  System.out.println(b); 
+	 }  
+     
+    public static void main(String[] args)
+	{  
+    MethodOverloading1 mo= new MethodOverloading1();
+	mo.printt(10,20);
+	mo.printt(10);
+	
+    }
+  } 
+  
+  
+  Output : 30
+           10
+  
+  
+25.class break_continue
+   { 
+     public static void main(String[] args)
+	 {
+	   //break
+	   System.out.println("break");
+	  for(int i=0 ; i<=5 ; i++)
+	  
+	  {
+	    if(i<4) 
+		System.out.println(i);
+		else
+		{ 
+		break;
+		}
+	  }
+	  System.out.println("continue");
+	   for(int i=0 ; i<=5 ; i++)
+	  {
+	    if(i<4) 
+		System.out.println(i);
+		else
+		{ 
+		continue;
+		}
+	  }
+	  
+	   
+  Output : break
+           0
+           1
+		   2
+		   3
+		   continue
+		   0
+		   1
+		   2
+		   3
+		   5
+		   
+		   
+		   
+SQL :
+ 
+ 3 .Rename the coloumn name
+     
+     * Alter Table table_name Rename Coloumn old_coloumn_name to new_coloumn_name;
+	 
+ 7. 
+
+    *select MAX(salary) AS max_salary from employee  where department = 'dept' ;
+
+ 12. 
+ 
+     * create Table new_emp_table AS Select * from employee ;
+     
