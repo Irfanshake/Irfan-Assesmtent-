@@ -27,29 +27,30 @@
 8.Write a program to demonstrate the method overloading by changing a number of arguments ?
   class MethodOverloading1
  {  
-    void printt(int a,int b)
+    void add(int a,int b)
 	{
 	int c=a+b;
 	System.out.println(c);
 	}  
-     void printt(int a)
+     void add(int a , double b  )
 	 
 	 {
-	  System.out.println(b); 
+	 double d=a+b;
+	  System.out.println(d); 
 	 }  
      
     public static void main(String[] args)
 	{  
     MethodOverloading1 mo= new MethodOverloading1();
 	mo.printt(10,20);
-	mo.printt(10);
+	mo.printt(10,15.0);
 	
     }
   } 
   
   
   Output : 30
-           10
+           25.0
   
   
 25.class break_continue
@@ -93,15 +94,15 @@
 		   
 SQL :
  
- 3 .Rename the coloumn name
+  3. Rename the coloumn name ?
      
-     * Alter Table table_name Rename Coloumn old_coloumn_name to new_coloumn_name;
+     Alter Table table_name Rename Coloumn old_coloumn_name to new_coloumn_name;
 	 
- 7. 
+ 7. Print max salary for a particular department ?
 
-    *select MAX(salary) AS max_salary from employee  where department = 'dept' ;
+    select MAX(salary) from table_name  where department = 'dept' ;
 
- 12. 
+ 12. How can i create table with same stucture with data ?
  
-     * create Table new_emp_table AS Select * from employee ;
+     create Table new_emp_table AS Select * from employee;
      
